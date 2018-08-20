@@ -1,0 +1,24 @@
+%ul
+    %li
+        %a href="https://cs00932-com2025-project-casselwood.c9users.io">Home
+    %li
+        %a href="https://cs00932-com2025-project-casselwood.c9users.io/contact"> Contact Us
+    %li
+        %a href="https://cs00932-com2025-project-casselwood.c9users.io/modules"> Module Selection
+    
+
+%p= "Dear #{t('app_title')}," 
+%p= "Could you get in touch with me please?"
+
+%dl
+    %dt Name: 
+    %dd= @name
+    %dt Email:
+    %dd= @email
+    %dt Telephone:
+    %dd= @telephone
+
+%p= @message
+
+%p Thanks,
+%p= @name

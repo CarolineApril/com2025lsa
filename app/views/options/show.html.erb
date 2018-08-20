@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<div class="navigation"> <!-- creating navigation -->
+        <ul>
+            <li><a href="https://cs00932-com2025-project-casselwood.c9users.io">Home</a></li>
+            <li><a href="https://cs00932-com2025-project-casselwood.c9users.io/contact">Contact Us</a></li>
+            <li><a href="https://cs00932-com2025-project-casselwood.c9users.io/modules">Module Selection</a></li>
+        </ul>
+    </div>
+
+<p> <!-- creating areas to display module info -->
+  <strong>Title:</strong>
+  <%= @option.title %> <!-- call different information from database -->
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @option.content %>
+</p>
+
+<p>
+  <strong>Professor:</strong>
+  <%= @option.professor %>
+</p>
+
+<p>
+  <strong>Credits:</strong>
+  <%= @option.credits %>
+</p>
+
+<%= link_to 'Edit', edit_option_path(@option) %> | <!-- link 'edit' to the edit page-->
+<%= link_to 'Back', options_path %> <!-- link 'back' to the module page-->
